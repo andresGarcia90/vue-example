@@ -1,19 +1,21 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { RouterView } from 'vue-router'
+import IconPinia from './components/icons/IconPinia.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    <IconPinia />
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <h3>Pinia - Ejercicios</h3>
+      <nav>
+        <RouterLink to="/">Counter Options</RouterLink>
+      </nav>
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <RouterView />
   </main>
 </template>
 
