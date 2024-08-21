@@ -1,5 +1,5 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router'
 import IconPinia from './components/icons/IconPinia.vue'
 </script>
 
@@ -10,13 +10,15 @@ import IconPinia from './components/icons/IconPinia.vue'
       <h3>Pinia - Ejercicios</h3>
       <nav>
         <RouterLink to="/">Counter Options</RouterLink>
+        <RouterLink to="/counter-1">Counter Setups</RouterLink>
+        <RouterLink to="/clients">Clients</RouterLink>
       </nav>
     </div>
   </header>
 
-  <main>
-    <RouterView />
-  </main>
+  <RouterView />
+  <!-- <main>
+  </main> -->
 </template>
 
 <style scoped>

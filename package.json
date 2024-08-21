@@ -8,9 +8,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "backend-server": "json-server --watch ./src/db/db.json --port 3000"
   },
   "dependencies": {
+    "json-server": "^1.0.0-beta.2",
     "pinia": "^2.2.2",
     "vue": "^3.4.29",
     "vue-router": "^4.4.3"
